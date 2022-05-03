@@ -1,0 +1,3 @@
+# Algorithms
+
+## Types of Algorithms
