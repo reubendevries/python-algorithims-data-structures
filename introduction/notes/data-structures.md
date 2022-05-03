@@ -1,8 +1,8 @@
 # Data Structures
 
 ## Types of Data Structures
-
-Data Structures TB
+````mermaid
+flowchart TB
     B["Data Structures"]
     B-->C("Primitive")
     C-->C1("string")
@@ -21,7 +21,7 @@ Data Structures TB
     D-->D2(Non-Linear)
     D2-->H1("Tree")
     D2-->H2("Graph")
-
+````
         --------------------- Data Structures ---------------------
         |                                                           |
         |                                                           |
