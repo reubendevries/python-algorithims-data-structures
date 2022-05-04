@@ -4,27 +4,34 @@
 ````mermaid
 flowchart TB
     subgraph Data Structures
+        direction LR
         subgraph Primitive
-            A1-->string
-            A2-->Interger
-            A3-->Boolean
-            A4-->Float
-            A5-->Character
+            directiion TB
+            (String)
+            (Interger)
+            (Boolean)
+            (Float)
+            (Character)
         end
         subgraph Non-Primitive
+            direction TB
             subgraph Linear
+                direction LR
                 subgraph Static
-                    B1-->Array
+                    direction TB
+                    (Array)
                 end
                 subgraph Dynamic
-                    C1-->Linked List
-                    C2-->Stack
-                    C3-->Queue
+                    direction TB
+                    (Linked List)
+                    (Stack)
+                    (Queue)
                 end
             end
             subgraph Non-Linear
-                D1-->Tree
-                D2-->Graph
+                direction TB
+                (Tree)
+                (Graph)
             end
     end
 ````
