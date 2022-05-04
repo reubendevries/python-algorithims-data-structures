@@ -29,7 +29,7 @@ flowchart LR
                 end
             end
             subgraph Non-Linear
-                direction LB
+                direction TB
                 Tree
                 Graph
             end
