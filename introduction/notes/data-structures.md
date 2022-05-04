@@ -3,30 +3,28 @@
 ## Types of Data Structures
 ````mermaid
 flowchart LR
-    subgraph (Data Structures)
-        direction LR
-        subgraph (Primitive)
-            (String)
-            (Interger)
-            (Boolean)
-            (Float)
-            (Character)
+    subgraph Data Structures
+        subgraph Primitive
+            String
+            Interger
+            Boolean
+            Character
+            Float
         end
-        subgraph (Non-Primitive)
-            subgraph (Linear)
-                direction LR
-                subgraph (Static)
-                    (Array)
+        subgraph Non-Primitive
+            subgraph Linear
+                subgraph Static
+                    Array
                 end
-                subgraph (Dynamic)
-                    (Linked List)
-                    (Stack)
-                    (Queue)
+                subgraph Dynamic
+                    Linked List
+                    Stack
+                    Queue
                 end
             end
-            subgraph (Non-Linear)
-                (Tree)
-                (Graph)
+            subgraph Non-Linear
+                Tree
+                Graph
             end
         end
     end
