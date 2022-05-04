@@ -3,22 +3,22 @@
 ## Types of Data Structures
 ````mermaid
 flowchart TB
-    B["Data Structures"]
-    B-->C("Primitive")
-    C-->C1("string")
-    C-->C2("Interger")
-    C-->C3("Boolean")
-    C-->C4("Float")
-    C-->C5("Character")
-    B-->D("Non-Primitive")
-    D-->D1("Linear")
-    D1-->E1("Static")
-    E1-->F1("Array")
-    D1-->E2("Dynamic")
-    E2-->G1("Linked List")
-    E2-->G2("Stack")
-    E2-->G3("Queue")
-    D-->D2(Non-Linear)
-    D2-->H1("Tree")
-    D2-->H2("Graph")
+    subgraph Data Structures
+        subgraph Primitive
+            A1-->string
+            A2-->Interger
+            A3-->Boolean
+            A4-->Float
+            A5-->Character
+        subgraph Non-Primitive
+            subgraph Linear
+                subgraph Static
+                    B1-->Array
+                subgraph Dynamic
+                    C1-->Linked List
+                    C2-->Stack
+                    C3-->Queue
+            subgraph Non-Linear
+                D1-->Tree
+                D2-->Graph
 ````
