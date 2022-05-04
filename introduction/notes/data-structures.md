@@ -2,7 +2,7 @@
 
 ## Types of Data Structures
 ````mermaid
-flowchart LR
+flowchart TB
     subgraph Data Structures
         direction TB
         subgraph Primitive
@@ -31,4 +31,10 @@ flowchart LR
             end
         end
     end
+    Data Structures --> Primitive
+    Data Structures --> Non-Primitive
+    Non-Primitive --> Linear
+    Non-Primitive --> Non Linear
+    Linear --> Static
+    Linear --> Dynamic
 ````
