@@ -6,7 +6,6 @@ flowchart TB
     subgraph Data Structures
         direction LR
         subgraph Primitive
-            directiion TB
             (String)
             (Interger)
             (Boolean)
@@ -14,22 +13,18 @@ flowchart TB
             (Character)
         end
         subgraph Non-Primitive
-            direction TB
             subgraph Linear
                 direction LR
                 subgraph Static
-                    direction TB
                     (Array)
                 end
                 subgraph Dynamic
-                    direction TB
                     (Linked List)
                     (Stack)
                     (Queue)
                 end
             end
             subgraph Non-Linear
-                direction TB
                 (Tree)
                 (Graph)
             end
