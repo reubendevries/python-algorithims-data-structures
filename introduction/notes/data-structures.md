@@ -19,9 +19,9 @@ flowchart TB
                     Array
                 end
                 subgraph Dynamic
-                    [- Linked_List]
-                    [- Stack]
-                    [- Queue]
+                    "Linked List"
+                    "Stack"
+                    "Queue"
                 end
             end
             subgraph Non-Linear
