@@ -6,6 +6,7 @@ flowchart LR
     subgraph Data Structures
         direction LR
         subgraph Primitive
+            direction TB
             String
             Interger
             Boolean
