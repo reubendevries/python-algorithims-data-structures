@@ -13,6 +13,7 @@ flowchart LR
             Float
         end
         subgraph Non-Primitive
+            direction LR
             subgraph Linear
                 subgraph Static
                     Array
