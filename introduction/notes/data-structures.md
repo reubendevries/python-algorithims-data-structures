@@ -4,7 +4,7 @@
 ````mermaid
 flowchart LR
     subgraph Data Structures
-        direction LR
+        direction TB
         subgraph Primitive
             direction TB
             String
