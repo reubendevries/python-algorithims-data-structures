@@ -4,6 +4,7 @@
 ````mermaid
 flowchart LR
     subgraph Data Structures
+        direction LR
         subgraph Primitive
             String
             Interger
