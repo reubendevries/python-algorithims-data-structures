@@ -15,6 +15,7 @@ flowchart LR
         subgraph Non-Primitive
             direction LR
             subgraph Linear
+                direction TB
                 subgraph Static
                     Array
                 end
@@ -25,6 +26,7 @@ flowchart LR
                 end
             end
             subgraph Non-Linear
+                direction TB
                 Tree
                 Graph
             end
