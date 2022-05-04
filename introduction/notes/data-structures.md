@@ -17,7 +17,7 @@ flowchart LR
                     Array
                 end
                 subgraph Dynamic
-                    Linked List
+                    Linked_List
                     Stack
                     Queue
                 end
