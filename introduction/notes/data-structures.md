@@ -22,20 +22,3 @@ flowchart TB
     D2-->H1("Tree")
     D2-->H2("Graph")
 ````
-        --------------------- Data Structures ---------------------
-        |                                                           |
-        |                                                           |
-        |                                                           |
-        |                                                           |
-    Primitive                                   ----------- Non-Primitive ----------- 
-        |                                       |                                    |
-        |                                       |                                    |
-    - String                            ---- Linear -----                       Non-Linear 
-    - Interger                          |                |                           |
-    - Boolean                           |                |                           |
-    - Float                          Static           Dynamic                     - tree
-    - Character                         |                |                        - graph
-                                        |                |
-                                    - array         - Linked List
-                                                    - Stack
-                                                    - Queue 
