@@ -13,7 +13,6 @@ flowchart LR
             Float
         end
         subgraph Non-Primitive
-            direction LR
             subgraph Linear
                 direction TB
                 subgraph Static
