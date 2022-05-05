@@ -26,15 +26,60 @@ ___
 - It's a problem that can be solved by solving smaller instances of the same problem unless 
     that problem is so small that we can just solve it directly.
 
-**Example of a simple Recursive Algorithm**
-
+**Examples of a simple Recursive Algorithm**
+##### python
+```python
+def openRussianDoll(i):
+    if i == 1:
+        print("All dolls are opened")
+    else:
+        openRussianDoll(i-1)
 ```
-Algorithm Sum(A, n)
-    if n = 1
-        return A[0]
-    s = Sum[A, n-1] /* recurse on all but last */
-    s = s + A[n-1] /* add last element */
-return s
+##### go
+```go
+func OpenRussianDoll(i int) {
+    if i == 1 {
+        fmt.Println("All dolls are opened")
+    } else {
+        OpenRussianDoll(i-1)
+    }
+}
+```
+##### java
+``` java
+public class Main {
+    public static void main(String[] args) {
+        RussianDoll(10);
+    }
+    public static int RussianDoll(int i) {
+        if (i > 1 ) {
+            RussianDoll(i-1);
+        } else {
+            System.print.out("All dolls are opened");
+        }
+    }
+}
+```
+
+#### javascript
+``` javascript
+function RusssianDoll(i) {
+    if (i > 1) {
+        RussianDoll(i-1)
+    } else {
+        window.alert("All dolls are opened")
+    }
+}
+```
+##### php
+```php
+function russianDoll($i) {
+    if ($i > 1) {
+        russianDoll($i-1);
+    } else {
+        echo "All dolls are opened.";
+    }
+}
 ```
 
 ### Divide & Conquer Algorithm
