@@ -8,11 +8,40 @@ A way of solving a problem by having a function call itself. A real life metapho
 - We need to define a base condition so we know when we need to stop the recursion process. Otherwise we will create an infinite loop.
 
 ## Why do we need Recursion?
+Recursive thinking is really important in programming when you need to break down bigger problems into smaller ones to help make the problem solving a bit more manageable. These are the reasons why you would want to learn about recursion algorithms.
+
+- You can divide the problem into similar sub-problems.
+- Prominate usage of recussion will be used when facing problems with both trees and graphs.
+- Recursion is used in many other algorithms (i.e. Divide & Conquer, Greedy, and )
 
 ## How does Recursion work?
-
+### Bad Way
+```python
+def firstMethod():
+    secondMethod()
+    print("I am the first method")
+def secondMethod():
+    thirdMethod()
+    print("I am the second method")
+def thirdMethod():
+    fourthMethod()
+    print("I am the third method")
+def fourthMethod():
+    print("I am the fourth method")
+```
+### Good Way
+```python
+    def method(str):
+        print("I am the %s method")
+    list = ["first", "second","third","forth"]
+    for i in list:
+        method(i)
+```
 ## When to use Recursion?
 
 ## When to avoid using Recursion?
 
 ## Challenge
+How to find the Fibonacci numbers using Recursion?
+```python
+```
