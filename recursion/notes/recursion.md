@@ -44,6 +44,25 @@ if __name__ == "__main__":
     recursion_example(4)
 
 ```
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	recusionExample(10)
+}
+
+func recusionExample(n int) {
+	if n == 1 {
+		fmt.Println(n)
+	} else {
+		fmt.Println(n)
+		recusionExample(n - 1)
+	}
+}
+```
 ## When to use Recursion?
 
 ## When to avoid using Recursion?
