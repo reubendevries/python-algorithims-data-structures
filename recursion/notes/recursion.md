@@ -110,9 +110,16 @@ simpleRecursionExample(10);
 ?>
 ```
 ## When to use Recursion?
-
+- When we can break the big probelm into smaller easier to solve sub-problems.
+- When we can accept the extra overhead (both time and space) that comes along with recursion.
+- When we need a quick solution instead of an efficient solution.
+- When we need to travese a tree graph.
+- When we use memorization to solve a problem.
 ## When to avoid using Recursion?
-
+- When we can't break the problem into small sub-problems.
+- When time and space complexity actually matter to solving the problem.
+- When we require a low-memory consumption solution.
+- When we require a time-sensitive solution.
 ## Challenge
 How to find the Fibonacci numbers using Recursion?
 ```python
