@@ -3,14 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	recusionExample(10)
+	simpleRecursionExample(10)
 }
 
-func recusionExample(n int) {
+func simpleRecursionExample(n int) {
 	if n == 1 {
 		fmt.Println(n)
 	} else {
 		fmt.Println(n)
-		recusionExample(n - 1)
+		simpleRecursionExample(n - 1)
 	}
 }

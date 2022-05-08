@@ -31,17 +31,17 @@ def fourthMethod():
 ```
 ### Good Way
 ```python
-    def recursion_example(n):
+def simple_recursion_example(n):
     '''Example of Recursion Function - it will keep calling the function until it has
     reached 1'''
     if n==1:
         print("n is equal to 1")
     else:
         print(n)
-        recursion_example(n-1)
+        simple_recursion_example(n-1)
 
 if __name__ == "__main__":
-    recursion_example(10)
+    simple_recursion_example(10)
 
 ```
 
@@ -51,36 +51,38 @@ package main
 import "fmt"
 
 func main() {
-	recusionExample(10)
+	simpleRecursionExample(10)
 }
 
-func recusionExample(n int) {
+func simpleRecursionExample(n int) {
 	if n == 1 {
 		fmt.Println(n)
 	} else {
 		fmt.Println(n)
-		recusionExample(n - 1)
+		simpleRecursionExample(n - 1)
 	}
 }
 ```
 
 ```java
 public class recursion {
-    static void recursionExample(int n) {
-      if (n == 1) {
-          System.out.println(n);
-      } else {
-          System.out.println(n);
-          recursionExample(n-1);
-      }
+  static void simpleRecursionExample(int n) {
+    if (n == 1) {
+        System.out.println(n);
+    } else {
+        System.out.println(n);
+        simpleRecursionExample(n-1);
     }
-}
+  }
 
-recursionExample(10);
+  public static void Recursion(int[] args) {
+    simpleRecursionExample(10);
+  }
+}
 ```
 
 ```javascript
-function recursionExample(n) {
+function simpleRecursionExample(n) {
     if (n == 1) {
         alert(n)
     } else {
@@ -88,16 +90,23 @@ function recursionExample(n) {
         recursionExample(n-1)
     }
 }
-recusionExample($n) {
+
+simpleRecursionExample(10)
+```
+
+```php
+<?php
+function simpleRecursionExample($n) {
     if ($n == 1) {
         echo "$n\n";
     } else {
         echo "$n\n";
-        recursionExample($n-1);
+        simpleRecursionExample($n-1);
     }
 }
 
-recursionExample(10);
+simpleRecursionExample(10);
+
 ?>
 ```
 ## When to use Recursion?
