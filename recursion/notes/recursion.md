@@ -41,7 +41,7 @@ def fourthMethod():
         recursion_example(n-1)
 
 if __name__ == "__main__":
-    recursion_example(4)
+    recursion_example(10)
 
 ```
 
@@ -62,6 +62,43 @@ func recusionExample(n int) {
 		recusionExample(n - 1)
 	}
 }
+```
+
+```java
+public class recursion {
+    static void recursionExample(int n) {
+      if (n == 1) {
+          System.out.println(n);
+      } else {
+          System.out.println(n);
+          recursionExample(n-1);
+      }
+    }
+}
+
+recursionExample(10);
+```
+
+```javascript
+function recursionExample(n) {
+    if (n == 1) {
+        alert(n)
+    } else {
+        alert(n)
+        recursionExample(n-1)
+    }
+}
+recusionExample($n) {
+    if ($n == 1) {
+        echo "$n\n";
+    } else {
+        echo "$n\n";
+        recursionExample($n-1);
+    }
+}
+
+recursionExample(10);
+?>
 ```
 ## When to use Recursion?
 

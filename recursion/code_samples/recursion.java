@@ -1,13 +1,10 @@
-public class main{
-    public static void main(int args) {
-        recursion(10)
+public class recursion {
+    static void recursionExample(int n) {
+      if (n == 1) {
+          System.out.println(n);
+      } else {
+          System.out.println(n);
+          recursionExample(n-1);
+      }
     }
-    public static int recursion(int n) {
-        if (n == 1) {
-            System.print.out(n)
-        } else {
-            System.print.out(n)
-            recursion(n-1)
-        }
-    }
-}
+  }
