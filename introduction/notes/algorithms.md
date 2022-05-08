@@ -37,7 +37,7 @@ def openRussianDoll(i):
 ```
 ##### go
 ```go
-func OpenRussianDoll(i int) {
+func openRussianDoll(i int) {
     if i == 1 {
         fmt.Println("All dolls are opened")
     } else {
@@ -49,13 +49,13 @@ func OpenRussianDoll(i int) {
 ``` java
 public class Main {
     public static void main(String[] args) {
-        RussianDoll(10);
+        russianDoll(10);
     }
-    public static int RussianDoll(int i) {
-        if (i > 1 ) {
-            RussianDoll(i-1);
-        } else {
+    public static int russianDoll(int i) {
+        if (i == 1 ) {
             System.print.out("All dolls are opened");
+        } else {
+            russianDoll(i-1);
         }
     }
 }
@@ -63,21 +63,21 @@ public class Main {
 
 #### javascript
 ``` javascript
-function RusssianDoll(i) {
-    if (i > 1) {
-        RussianDoll(i-1)
-    } else {
+function russsianDoll(i) {
+    if (i == 1) {
         window.alert("All dolls are opened")
+    } else {
+        russianDoll(i-1)
     }
 }
 ```
 ##### php
 ```php
 function russianDoll($i) {
-    if ($i > 1) {
-        russianDoll($i-1);
-    } else {
+    if ($i == 1) {
         echo "All dolls are opened.";
+    } else {
+        russianDoll($i-1);
     }
 }
 ```
