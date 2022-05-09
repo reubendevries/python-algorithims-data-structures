@@ -72,27 +72,30 @@ func forthMethod() {
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
-list = ["first", "second", "third", "forth"]
+var list = [...]string{"first", "second", "third", "forth"}
 
 func main() {
-    for i,v := range list {
-	    simpleRecursionExample(i, v)
-    }
+	for i, v := range list {
+		simpleRecursionExample(i, v)
+	}
 }
 
 func simpleRecursionExample(i int, s string) {
-    if i => len(list) {
-        fmt.Println("I'm the forth method")
-    } else {
-        fmt.Printf("I'm the %s method", s)
-        i++
-        s = list[i]
-        simpleRecursionExamle(i, s)
-    }
+	if i >= (len(list) - 1) {
+		fmt.Println("I'm the forth method")
+		os.Exit(0)
+	} else {
+		fmt.Printf("I'm the %s method\n", s)
+		i++
+		s = list[i]
+		simpleRecursionExample(i, s)
+	}
 }
-
 ```
 
 ```java
