@@ -44,24 +44,55 @@ if __name__ == "__main__":
     simple_recursion_example(10)
 
 ```
+### Bad Way
+```go
+package main
 
+func main() {
+	firstMethod()
+}
+
+func firstMethod() {
+    fmt.Println("I am the first method")
+	secondMethod()
+}
+func secondMethod() {
+    fmt.Println("I am the second method")
+	thirdMethod()
+}
+func thirdMethod() {
+    fmt.Println("I am the third method")
+	forthMethod()
+}
+func forthMethod() {
+    fmt.Println("I am the forth method")
+}
+```
+### Good Way
 ```go
 package main
 
 import "fmt"
 
+list = ["first", "second", "third", "forth"]
+
 func main() {
-	simpleRecursionExample(10)
+    for i,v := range list {
+	    simpleRecursionExample(i, v)
+    }
 }
 
-func simpleRecursionExample(n int) {
-	if n == 1 {
-		fmt.Println(n)
-	} else {
-		fmt.Println(n)
-		simpleRecursionExample(n - 1)
-	}
+func simpleRecursionExample(i int, s string) {
+    if i => len(list) {
+        fmt.Println("I'm the forth method")
+    } else {
+        fmt.Printf("I'm the %s method", s)
+        i++
+        s = list[i]
+        simpleRecursionExamle(i, s)
+    }
 }
+
 ```
 
 ```java
