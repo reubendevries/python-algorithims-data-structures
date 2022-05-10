@@ -12,7 +12,8 @@ function powerOfTwoRecursive($n) {
     if ($n == 0) {
         return 1;
     } else {
-        return (powerOfTwoRecursive($n-1) * 2);
+        $power = powerOfTwoRecursive($n - 1);
+		return $power * 2;
     }
 }
 
@@ -27,6 +28,8 @@ function powerOfTwoIterative($n) {
 }
 
 simpleRecursionExample(10);
-powerOfTwoRecursive(10);
-powerOfTwoIterative(10);
+$x = powerOfTwoRecursive(10);
+echo "$x\n";
+$y = powerOfTwoIterative(10);
+echo "$y\n";
 ?>
