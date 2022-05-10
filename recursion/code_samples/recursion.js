@@ -1,30 +1,33 @@
-function simpleRecursionExample(n) {
+
+const simpleRecursionExample = function(n) {
     if (n == 1) {
-        alert(n)
+        document.writeln(n);
     } else {
-        alert(n)
-        recursionExample(n-1)
+        document.write(n)
+        recursionExample(n-1);
     }
 }
-
-function powerOfTwoRecursive(n) {
+const powerOfTwoRecursive = function(n) {
     if (n == 0) {
-        return 1
+        return 1;
     } else {
-        return (powerOfTwoIterative(n-1) * 2)
+        power = powerOfTwoRecursive(n - 1);
+		return power * 2;
     }
 }
-
-function powerOfTwoIterative(n) {
-    i = 0
-    power = 1
+const powerOfTwoIterative = function(n) {
+    i = 0;
+    power = 1;
     while (i < n) {
-        power = (power * 2)
-        i = i + 1
+        power = (power * 2);
+        i = i + 1;
     }
-    return power
+    return power;
 }
 
-simpleRecursionExample(10)
-powerOfTwoRecursive(10)
-powerOfTwoIterative(10)
+//simpleRecursionExample(10);
+const x = powerOfTwoRecursive(10);
+document.writeln(x);
+document.writeln("<br>");
+const y = powerOfTwoIterative(10);
+document.writeln(y);

@@ -27,9 +27,11 @@ public class recursion {
 
   }
 
-  public static void Recursion(int[] args) {
+  public static void main(String[] args) {
     simpleRecursionExample(10);
-    powerOfTwoRecursive(10);
-    powerOfTwoIterative(10);
+    int x = powerOfTwoRecursive(10);
+    System.out.println(x);
+    int y = powerOfTwoIterative(10);
+    System.out.println(y);
   }
 }
