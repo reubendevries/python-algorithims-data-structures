@@ -16,7 +16,7 @@ Recursive thinking is really important in programming when you need to break dow
 
 ## Recursion Code Examples (Python, Go, Java, Javascript, PHP)?
 
-### Python Bad Way
+### Python Recursion Example: The Bad Way
 
 ```python
 
@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
 ```
 
-### Python Good Way
+### Python Recursion Example: The Good Way
 
 ```python
 
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
 ```
 
-### Go Bad Way
+### Go Recursion Example: The Bad Way
 
 ```go
 
@@ -86,7 +86,7 @@ func forthMethod() {
 
 ```
 
-### Go Good Way
+### Go Recursion Example: The Good Way
 
 ```go
 
@@ -119,7 +119,7 @@ func recursionMethodExample(i int, s string) {
 
 ```
 
-### Java Bad Way
+### Java Recursion Example: The Bad Way
 
 ```java
 public class recursion {
@@ -150,7 +150,7 @@ public class recursion {
 
 ```
 
-### Java Good Way
+### Java Recursion Example: The Good Way
 
 ```java
 public class recursion {
@@ -179,10 +179,10 @@ public class recursion {
     }
 }
 ```
-### Javascript Bad Way
+### Javascript Recursion Example: The Bad Way
 
 ```javascript
-
+Recursion Example: The Good Way
 const firstMethod = function() {
     console.log("I am the first method");
     secondMethod();
@@ -204,7 +204,7 @@ firstmethod();
 
 ```
 
-### Javascript Good Way
+### Javascript Recursion Example: The Good Way
 
 ```javascript
 
@@ -225,7 +225,7 @@ recursionMethodExample(i);
 
 ```
 
-### PHP Bad Way
+### PHP Recursion Example: The Bad Way
 
 ```php
 <?php
@@ -250,7 +250,7 @@ recursionMethodExample(i);
 ?>
 ```
 
-### PHP Good Way
+### PHP Recursion Example: The Good Way
 
 ```php
 <?php
