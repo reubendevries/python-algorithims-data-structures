@@ -14,9 +14,12 @@ Recursive thinking is really important in programming when you need to break dow
 - Prominate usage of recussion will be used when facing problems with both trees and graphs.
 - Recursion is used in many other algorithms (i.e. Divide & Conquer, Greedy, and )
 
-## How does Recursion work?
-### Bad Way
+## Recursion Code Examples (Python, Go, Java, Javascript, PHP)?
+
+### Python Bad Way
+
 ```python
+
 def firstMethod():
     secondMethod()
     print("I am the first method")
@@ -28,24 +31,37 @@ def thirdMethod():
     print("I am the third method")
 def fourthMethod():
     print("I am the fourth method")
-```
-### Good Way
-```python
-def simple_recursion_example(n):
-    '''Example of Recursion Function - it will keep calling the function until it has
-    reached 1'''
-    if n==1:
-        print("n is equal to 1")
-    else:
-        print(n)
-        simple_recursion_example(n-1)
 
 if __name__ == "__main__":
-    simple_recursion_example(10)
+    firstMethod()
 
 ```
-### Bad Way
+
+### Python Good Way
+
+```python
+
+list = ["first", "second", "third", "forth"]
+
+def recursion_method_example(n, s):
+    if s == "forth":
+        print("I am the forth method")
+    else:
+        print(f"I am the {s} method")
+        n = (n + 1)
+        s = list[n]
+        recursion_example(n, s)
+
+if __name__ == "__main__":
+    for i,v in range list:
+        recursion_example(i,v)
+
+```
+
+### Go Bad Way
+
 ```go
+
 package main
 
 func main() {
@@ -67,9 +83,13 @@ func thirdMethod() {
 func forthMethod() {
     fmt.Println("I am the forth method")
 }
+
 ```
-### Good Way
+
+### Go Good Way
+
 ```go
+
 package main
 
 import (
@@ -85,7 +105,7 @@ func main() {
 	}
 }
 
-func simpleRecursionExample(i int, s string) {
+func recursionMethodExample(i int, s string) {
 	if i >= (len(list) - 1) {
 		fmt.Println("I'm the forth method")
 		os.Exit(0)
@@ -96,50 +116,159 @@ func simpleRecursionExample(i int, s string) {
 		simpleRecursionExample(i, s)
 	}
 }
+
 ```
+
+### Java Bad Way
 
 ```java
 public class recursion {
-  static void simpleRecursionExample(int n) {
-    if (n == 1) {
-        System.out.println(n);
-    } else {
-        System.out.println(n);
-        simpleRecursionExample(n-1);
+    
+    static void firstMethod() {
+        System.out.println("I am the first method");
+        secondMethod();
     }
-  }
 
-  public static void Recursion(int[] args) {
-    simpleRecursionExample(10);
-  }
+    static void secondMethod() {
+        System.out.println("I am the second method");
+        thirdMethod();
+    }
+
+    static void thirdMethod() {
+        System.out.println("I am the third method");
+        fourthMethod();
+    }
+
+    static void forthMethod() {
+        System.out.println("I am the forth method");
+    }
+
+    public static void main(String[] args) {
+        firstMethod();
+    }
+}
+
+```
+
+### Java Good Way
+
+```java
+public class recursion {
+
+    final static ArrayList<String> list  = new ArrayList<String>(4);
+
+    static void recursionMethodExample(int i) {
+        if (i >= list.size()-1) {
+          System.out.printf("I am the %s method.", list.get(i));
+          System.exit(0);
+        } else {
+          System.out.printf("I am the %s method.%n", list.get(i));
+          i++;
+          recursionMethodExample(i);
+        }
+    }
+
+    public static void main(String[] args) {
+        list.add("First");
+        list.add("Second");
+        list.add("Third");
+        list.add("Forth");
+        for (int i = 0; i < list.size(); i++) {
+            recursionMethodExample(i);
+        }
+    }
 }
 ```
+### Javascript Bad Way
 
 ```javascript
-function simpleRecursionExample(n) {
-    if (n == 1) {
-        alert(n)
+
+const firstMethod = function() {
+    console.log("I am the first method");
+    secondMethod();
+}
+const secondMethod = function() {
+    console.log("I am the second method");
+    thirdMethod();
+}
+const thirdMethod = function() {
+    console.log("I am the third method");
+    forthMethod();
+}
+
+const fourthMethod = function() {
+    console.log("I am the fourth method");
+}
+
+firstmethod();
+
+```
+
+### Javascript Good Way
+
+```javascript
+
+const list = ["first", "second", "third", "fourth"];
+    
+const recursionMethodExample = function(i) {
+    if (i >= list.length-1) {
+        document.write("I am the %s method", list[i]);
     } else {
-        alert(n)
-        recursionExample(n-1)
+        document.write("I am the %s method", list[i]);
+        i++
+        recursionMethodExample(i);
     }
 }
 
-simpleRecursionExample(10)
+let i = 0;
+recursionMethodExample(i);
+
 ```
+
+### PHP Bad Way
 
 ```php
 <?php
-function simpleRecursionExample($n) {
-    if ($n == 1) {
-        echo "$n\n";
-    } else {
-        echo "$n\n";
-        simpleRecursionExample($n-1);
+    function firstMethod() {
+        echo "This is the first method";
+        secondMethod();
     }
+
+    function secondMethod() {
+        echo "This is the second method";
+        thirdMethod();
+    }
+
+    function thirdMethod() {
+        echo "This is the third method";
+        forthMethod();
+    }
+
+    function fourthMethod() {
+        echo "This is the fourth method";
+    }
+?>
+```
+
+### PHP Good Way
+
+```php
+<?php
+$i = 0;
+
+function recursionMethodExample($i) {
+    $array = array("first", "second", "third", "fourth");
+    $arrayLength = count($array);
+    while ($i < ($arrayLength-1)) {
+        echo "I am the $array[$i] method\n";
+        $i++;
+        recursionMethodExample($i);
+    }
+    echo "I am the fourth method\n";
+    exit;
 }
 
-simpleRecursionExample(10);
+recursionMethodExample($i);
 
 ?>
 ```

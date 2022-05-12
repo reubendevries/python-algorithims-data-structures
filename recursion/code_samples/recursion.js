@@ -1,10 +1,10 @@
 
 const simpleRecursionExample = function(n) {
     if (n == 1) {
-        document.writeln(n);
+        console.log(n);
     } else {
-        document.write(n)
-        recursionExample(n-1);
+        console.log(n)
+        simpleRecursionExample(n-1);
     }
 }
 const powerOfTwoRecursive = function(n) {
@@ -25,9 +25,8 @@ const powerOfTwoIterative = function(n) {
     return power;
 }
 
-//simpleRecursionExample(10);
+simpleRecursionExample(10);
 const x = powerOfTwoRecursive(10);
-document.writeln(x);
-document.writeln("<br>");
+console.log(x);
 const y = powerOfTwoIterative(10);
-document.writeln(y);
+console.log(y);

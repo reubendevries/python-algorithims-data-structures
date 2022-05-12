@@ -1,4 +1,5 @@
 public class recursion {
+
   static void simpleRecursionExample(int n) {
     if (n == 1) {
         System.out.println(n);
@@ -24,7 +25,6 @@ public class recursion {
       i++;
     }
     return power;
-
   }
 
   public static void main(String[] args) {
