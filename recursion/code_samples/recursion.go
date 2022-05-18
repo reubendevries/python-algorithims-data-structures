@@ -3,11 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	simpleRecursionExample(10)
-	x := powerOfTwoRecursive(10)
+	x := factorial_number(5)
 	fmt.Println(x)
-	y := powerOfTwoIterative(10)
+	simpleRecursionExample(10)
+	y := powerOfTwoRecursive(10)
 	fmt.Println(y)
+	z := powerOfTwoIterative(10)
+	fmt.Println(z)
 }
 
 func simpleRecursionExample(n int) {
@@ -35,4 +37,14 @@ func powerOfTwoIterative(n int) int {
 		i++
 	}
 	return power
+}
+
+func factorial_number(n int) int {
+	if n < 0 {
+		return -1
+	} else if n < 2 {
+		return 1
+	} else {
+		return (n * factorial_number(n-1))
+	}
 }

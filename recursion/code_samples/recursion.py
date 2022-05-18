@@ -24,11 +24,32 @@ def power_of_two_iterative(n):
         i = i + 1
     return power
 
-def factorial_function(n):
-    '''An example of a factorial function written in python.'''
-    return n
+def recursive_factorial_number(n):
+    '''An example of a recursive factorial function written in python.'''
+    if n < 0:
+        return -1
+    elif n < 2:
+        return 1
+    else:
+        return (n * recursive_factorial_number(n-1))
+
+def iterative_factorial_number(n):
+    '''An example of iterative factorial function written in python'''
+    if n < 0:
+        return -1
+    elif n < 2:
+        return 1
+    else:
+        answer = 1
+        for i in range(answer, n+1):
+            answer *= i
+        return answer
 
 if __name__ == "__main__":
+    recursive_answer = recursive_factorial_number(5)
+    print(recursive_answer)
+    iterative_answer = iterative_factorial_number(5)
+    print(iterative_answer)
     simple_recursion_example(10)
     x = power_of_two_recursive(10)
     print(x)

@@ -296,11 +296,60 @@ recursionMethodExample($i);
 - When we require a low-memory consumption solution.
 - When we require a time-sensitive solution.
 
+## How to write recursion in 3 steps?
+
+### Factorial
+
+- It is the product of all positive integers less than or equal to $n$
+- Denoted by $n!$ (introduced by French Mathematician Christian Kramp in 1808)
+- Can contain only positive intergers.
+- i.e. $5! = 120$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;5&nbsp;x&nbsp;4&nbsp;x&nbsp;3&nbsp;x&nbsp;2&nbsp;x&nbsp;1&nbsp;)
+- i.e $8! = 40,320$&nbsp;&nbsp;&nbsp;(&nbsp;8&nbsp;x&nbsp;7&nbsp;x&nbsp;6&nbsp;x&nbsp;5&nbsp;x&nbsp;4&nbsp;x&nbsp;3&nbsp;x&nbsp;2&nbsp;x&nbsp;1&nbsp;)
+
 ## Challenge
+
+### Factorial Sum
+
+```python
+    def factorial_number(n):
+    '''An example of a recursive factorial function written in python.'''
+    if n < 0:
+        return -1
+    elif n < 2:
+        return 1
+    else:
+        return (n * factorial_number(n-1))
+```
+```go
+    func factorial_number(int n) int {
+        if n < 0 {
+            return -1
+        } else if n < 2 {
+            return 1
+        } else {
+            return (n * factorial_number(n-1))
+        }
+    }
+    func main() {
+        factorial_number(5)
+    }
+```
+
+### Fibonacci Numbers
+
+The Fibonacci numbers from a sequence, commonly know as the Fibonacci sequence in which each number is the sum of the two preceding ones.
 
 ### How to find the Fibonacci numbers using Recursion?
 
 ```python
+    def fibonancci_sequence():
+        fibonancci = [0,1,1,2,3,5,8,13,21]
+        i = 0
+        while i <= (len(fibonanci)-1):
+            sum = fibonancci[i] + fibonancci[i+1]
+        print(sum)
+            
+
 ```
 
 ```go
