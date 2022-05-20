@@ -1,15 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 func main() {
-	x := factorial_number(5)
-	fmt.Println(x)
+	a := factorial_number(5)
+	fmt.Println(a)
 	simpleRecursionExample(10)
-	y := powerOfTwoRecursive(10)
-	fmt.Println(y)
-	z := powerOfTwoIterative(10)
-	fmt.Println(z)
+	b := powerOfTwoRecursive(10)
+	fmt.Println(b)
+	c := powerOfTwoIterative(10)
+	fmt.Println(c)
+	d := fibonacci_function(1)
+	log.Printf("Result: %d\n", d)
 }
 
 func simpleRecursionExample(n int) {
@@ -47,4 +52,11 @@ func factorial_number(n int) int {
 	} else {
 		return (n * factorial_number(n-1))
 	}
+}
+
+func fibonacci_function(n int) int {
+	if n == 0 || n == 1 {
+		return n
+	}
+	return fibonacci_function(n-2) + fibonacci_function(n-1)
 }

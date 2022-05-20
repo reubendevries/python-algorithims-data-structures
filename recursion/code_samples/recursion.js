@@ -25,8 +25,30 @@ const powerOfTwoIterative = function(n) {
     return power;
 }
 
+const factorialNumber = function(n) {
+    if (n <= 0){
+        return -1;
+    } else if (n < 2){
+        return 1;
+    } else{
+        return (n * factorialNumber(n-1));
+    }
+}
+
+const fibonacciFunction = function(n) {
+    if (n == 0 || n == 1) {
+        return n;
+    } else {
+      return (fibonacciFunction(n-2) + fibonacciFunction(n-1));
+    }
+}
+
 simpleRecursionExample(10);
-const x = powerOfTwoRecursive(10);
-console.log(x);
-const y = powerOfTwoIterative(10);
-console.log(y);
+const a = powerOfTwoRecursive(10);
+console.log(a);
+const b = powerOfTwoIterative(10);
+console.log(b);
+const c = factorialNumber(5);
+console.log(c);
+const d = fibonacciFunction(10);
+console.log(d);

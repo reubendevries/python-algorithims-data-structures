@@ -311,30 +311,77 @@ recursionMethodExample($i);
 ### Factorial Sum
 
 ```python
-    def factorial_number(n):
-    '''An example of a recursive factorial function written in python.'''
+def factorial_number(n):
+'''An example of a recursive factorial function written in python.'''
     if n < 0:
         return -1
     elif n < 2:
         return 1
     else:
         return (n * factorial_number(n-1))
+
+if __name__ == "__main__":
+    factorial_number(5)
 ```
 ```go
-    func factorial_number(int n) int {
-        if n < 0 {
-            return -1
-        } else if n < 2 {
-            return 1
-        } else {
-            return (n * factorial_number(n-1))
-        }
+func factorial_number(int n) int {
+    if n < 0 {
+        return -1
+    } else if n < 2 {
+        return 1
+    } else {
+        return (n * factorial_number(n-1))
     }
-    func main() {
-        factorial_number(5)
-    }
-```
 
+}
+func main() {
+    factorial_number(5)
+}
+```
+```java
+static int factorialNumber(int n) {
+  if (n <= 0) {
+    return -1;
+  } else if (n < 2){
+    return 1;
+  } else {
+    return (n * factorialNumber(n-1));
+  }
+}
+
+public static void main(String[] args) {
+    int x = factorialNumber(5);
+    System.out.println(x);
+}
+```
+```javascript
+const factorialNumber = function(n) {
+    if (n <= 0) {
+        return -1;
+    } else if (n < 2){
+        return 1;
+    } else {
+        return (n * factorialNumber(n-1));
+    }
+}
+
+const x = factorialNumber(5);
+console.log(x);
+```
+```php
+function factorialNumber($n) {
+    if ($n <= 0) {
+        return -1;
+    } else if  ($n < 2) {
+        return 1;
+    } else {
+        return ($n * factorialNumber($n-1));
+    }
+}
+
+$x = factorialNumber(5);
+echo "$x\n";
+```
 ### Fibonacci Numbers
 
 The Fibonacci numbers from a sequence, commonly know as the Fibonacci sequence in which each number is the sum of the two preceding ones.
@@ -342,26 +389,69 @@ The Fibonacci numbers from a sequence, commonly know as the Fibonacci sequence i
 ### How to find the Fibonacci numbers using Recursion?
 
 ```python
-    def fibonancci_sequence():
-        fibonancci = [0,1,1,2,3,5,8,13,21]
-        i = 0
-        while i <= (len(fibonanci)-1):
-            sum = fibonancci[i] + fibonancci[i+1]
-        print(sum)
-            
+def fibonacci_function(n):
+    if n == 0 or n == 1:
+        return n
+    else:
+        return fibonacci_function(n-2) + fibonacci_function(n-1)
 
+if __name__ == "__main__":
+    x = fibonacci_runction(10)
+    print(x)
 ```
 
 ```go
+func fibonacciFunction(n int) int {
+	if n == 0 || n == 1 {
+		return n
+	}
+	return fibonacci_function(n-2) + fibonacci_function(n-1)
+}
+
+func main() {
+    x := fibonacciFunction(10)
+    fmt.Println(x)
+}
 ```
 
 ```java
+static int fibonacciFunction(int n) {
+    if (n == 0 || n == 1) {
+        return n;
+    } else {
+        return fibonacciFunction(n-2) + fibonacciFunction(n-1);
+    }
+}
+
+public static void main([]string args){
+    x = fibonacciFunction(10);
+    System.out.println(x);
+}
 ```
 
 ```javascript
+const fibonacciFunction = function(n) {
+    if (n ==0 || n == 1) {
+        return n;
+    } else {
+        return fibonacciFunction(n-2) + fibonacciFunction(n-1);
+    }
+}
+
+x = fibonacciFunction(10);
+console.log(x);
 ```
 
 ```php
-```
+function fibonacciFunction($n) {
+    if ($n == 0 || $n == 1) {
+        return $n;
+    } else {
+        return fibonacciFunction($n-2) + fibonacciFunction($n-1);
+    }
+}
 
+$x = fibonacciFunction(10);
+echo "$x\n";
+```
 ###

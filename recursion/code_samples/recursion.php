@@ -27,9 +27,31 @@ function powerOfTwoIterative($n) {
     return $power;
 }
 
-simpleRecursionExample(10);
-$x = powerOfTwoRecursive(10);
-echo "$x\n";
-$y = powerOfTwoIterative(10);
-echo "$y\n";
+function factorialNumber($n) {
+    if ($n <= 0) {
+        return -1;
+    } else if  ($n < 2) {
+        return 1;
+    } else {
+        return ($n * factorialNumber($n-1));
+    }
+}
+
+function fibonacciNumber($n) {
+    if ($n == 0 || $n == 1) {
+        return $n;
+    } else {
+        return (fibonacciNumber($n-2) + fibonacciNumber($n-1));
+    }
+}
+
+simpleRecursionExample(10); // should count down from 10 to 1
+$a = powerOfTwoRecursive(10);
+echo "$a\n"; // should return 1024
+$b = powerOfTwoIterative(10);
+echo "$b\n"; // should return 1024
+$c = factorialNumber(5);
+echo "$c\n"; // should return 120
+$d = fibonacciNumber(10);
+echo "$d\n"; // should return 55
 ?>
