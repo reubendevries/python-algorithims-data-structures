@@ -306,7 +306,10 @@ recursionMethodExample($i);
 - i.e. $5! = 120$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;5&nbsp;x&nbsp;4&nbsp;x&nbsp;3&nbsp;x&nbsp;2&nbsp;x&nbsp;1&nbsp;)
 - i.e $8! = 40,320$&nbsp;&nbsp;&nbsp;(&nbsp;8&nbsp;x&nbsp;7&nbsp;x&nbsp;6&nbsp;x&nbsp;5&nbsp;x&nbsp;4&nbsp;x&nbsp;3&nbsp;x&nbsp;2&nbsp;x&nbsp;1&nbsp;)
 
-## Challenge
+## How to solve the Challenge
+
+### Step One: Build a flow using Recursion.
+$n! = n * (n-1) * (n-2) ... * 2 * 1 \overrightarrow
 
 ### Factorial Sum
 
