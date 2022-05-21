@@ -307,9 +307,8 @@ recursionMethodExample($i);
 
 $$ 
 5! \text{ or } 5 \times 4 \times 3 \times 2 \times 1  = 120
-$$
-$$
-8! \text{ or } 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 40,320 \\
+\newline
+8! \text{ or } 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 40,320S
 $$
 
 ## How to solve the Challenge
