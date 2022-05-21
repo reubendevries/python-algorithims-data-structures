@@ -310,7 +310,7 @@ $$
 $$
 
 $$
-    8! \text{ or } 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 40,320S
+    8! \text{ or } 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 40,320
 $$
 
 ## How to solve the Challenge
