@@ -288,21 +288,16 @@ recursionMethodExample($i);
 - When we need a quick solution instead of an efficient solution.
 - When we need to travese a tree graph.
 - When we use memorization to solve a problem.
-
 ## When to avoid using Recursion?
-
 - When we can't break the problem into small sub-problems.
 - When time and space complexity actually matter to solving the problem.
 - When we require a low-memory consumption solution.
 - When we require a time-sensitive solution.
-
-### Factorial Sum
-
+## Factorial Sum
 - It is the product of all positive integers less than or equal to $n$
 - Denoted by $n!$ (introduced by French Mathematician Christian Kramp in 1808)
 - Can contain only positive intergers.
 - i.e.
-
 $$ 
     5! \text{ or } 5 \times 4 \times 3 \times 2 \times 1  = 120
 $$
@@ -311,21 +306,21 @@ $$
     8! \text{ or } 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 40,320
 $$
 
-## How to solve the Factorial Sum Challenge in 3 steps.
+### How to solve the Factorial Sum Challenge in 3 steps.
 
-### Step One: Build a functional alogorithm using recursion.
+#### Step One: Build a functional alogorithm using recursion.
 
 The goal here is to create an alogorithm that can compute the factorial sum using recursion. If we look closely when we compute factorial numbers we are multiplying the first number by the number below it, so if *n* is equal to a number then we can see how the below example on the right can essentially be decalared to be the same on the left:  
 
 
 $$ n! = n * (n-1) * (n-2) ... * 2 * 1 \longrightarrow n! = n * (n-1) $$
 
-### Step Two: Create a condition that allows us to stop.
+#### Step Two: Create a condition that allows us to stop.
 
 The immediate problem here is that we haven't created a method to stop. This will essentially cause an infinate recursion, due to the fact that computations don't know when we need to stop.
-## Factorial Sum Solution
+### Factorial Sum Solution
 
-### python
+#### python
 ```python
 def factorial_number(n):
 '''An example of a recursive factorial function written in python.'''
@@ -338,7 +333,7 @@ if __name__ == "__main__":
     factorial_number(5)
 ```
 
-### go
+#### go
 ```go
 func factorial_number(int n) int {
     if n < 0 {
@@ -356,7 +351,7 @@ func main() {
 }
 
 ```
-### java
+#### java
 ```java
 
 static int factorialNumber(int n) {
@@ -375,7 +370,7 @@ public static void main(String[] args) {
 }
 
 ```
-### javascript
+#### javascript
 ```javascript
 
 const factorialNumber = function(n) {
@@ -392,7 +387,7 @@ const x = factorialNumber(5);
 console.log(x);
 
 ```
-### php
+#### php
 ```php
 function factorialNumber($n) {
     if ($n <= 0) {
@@ -407,14 +402,13 @@ function factorialNumber($n) {
 $x = factorialNumber(5);
 echo "$x\n";
 ```
-### Fibonacci Numbers
+## Fibonacci Numbers
 
 The Fibonacci numbers from a sequence, commonly know as the Fibonacci sequence in which each number is the sum of the two preceding ones.
-## How to solve the Factorial Sum Challenge in 3 steps.
+### How to solve the Factorial Sum Challenge in 3 steps.
 
-
-## Fibonacci Numbers Solution
-### python
+### Fibonacci Numbers Solution
+#### python
 ```python
 
 def fibonacci_function(n):
@@ -428,7 +422,7 @@ if __name__ == "__main__":
     print(x)
 
 ```
-### go
+#### go
 ```go
 
 func fibonacciFunction(n int) int {
@@ -444,7 +438,7 @@ func main() {
 }
 
 ```
-### java
+#### java
 ```java
 
 static int fibonacciFunction(int n) {
@@ -461,7 +455,7 @@ public static void main([]string args){
 }
 
 ```
-### javascript
+#### javascript
 ```javascript
 
 const fibonacciFunction = function(n) {
@@ -476,7 +470,7 @@ x = fibonacciFunction(10);
 console.log(x);
 
 ```
-### php
+#### php
 ```php
 
 function fibonacciFunction($n) {
