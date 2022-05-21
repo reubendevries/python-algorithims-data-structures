@@ -296,9 +296,7 @@ recursionMethodExample($i);
 - When we require a low-memory consumption solution.
 - When we require a time-sensitive solution.
 
-## How to write recursion in 3 steps?
-
-### Factorial
+### Factorial Sum
 
 - It is the product of all positive integers less than or equal to $n$
 - Denoted by $n!$ (introduced by French Mathematician Christian Kramp in 1808)
@@ -313,7 +311,7 @@ $$
     8! \text{ or } 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 40,320
 $$
 
-## How to solve the Challenge
+## How to solve the Factorial Sum Challenge in 3 steps.
 
 ### Step One: Build a functional alogorithm using recursion.
 
@@ -325,9 +323,9 @@ $$ n! = n * (n-1) * (n-2) ... * 2 * 1 \longrightarrow n! = n * (n-1) $$
 ### Step Two: Create a condition that allows us to stop.
 
 The immediate problem here is that we haven't created a method to stop. This will essentially cause an infinate recursion, due to the fact that computations don't know when we need to stop.
-### Factorial Sum Solution
+## Factorial Sum Solution
 
-#### python
+### python
 ```python
 def factorial_number(n):
 '''An example of a recursive factorial function written in python.'''
@@ -340,7 +338,7 @@ if __name__ == "__main__":
     factorial_number(5)
 ```
 
-#### go
+### go
 ```go
 func factorial_number(int n) int {
     if n < 0 {
@@ -358,8 +356,7 @@ func main() {
 }
 
 ```
-
-#### java
+### java
 ```java
 
 static int factorialNumber(int n) {
@@ -378,8 +375,7 @@ public static void main(String[] args) {
 }
 
 ```
-
-#### javascript
+### javascript
 ```javascript
 
 const factorialNumber = function(n) {
@@ -396,8 +392,7 @@ const x = factorialNumber(5);
 console.log(x);
 
 ```
-
-#### php
+### php
 ```php
 function factorialNumber($n) {
     if ($n <= 0) {
@@ -415,10 +410,11 @@ echo "$x\n";
 ### Fibonacci Numbers
 
 The Fibonacci numbers from a sequence, commonly know as the Fibonacci sequence in which each number is the sum of the two preceding ones.
+## How to solve the Factorial Sum Challenge in 3 steps.
 
-### Fibonacci Numbers Solution?
 
-#### python
+## Fibonacci Numbers Solution
+### python
 ```python
 
 def fibonacci_function(n):
@@ -432,8 +428,7 @@ if __name__ == "__main__":
     print(x)
 
 ```
-
-#### go
+### go
 ```go
 
 func fibonacciFunction(n int) int {
@@ -449,8 +444,7 @@ func main() {
 }
 
 ```
-
-#### java
+### java
 ```java
 
 static int fibonacciFunction(int n) {
@@ -467,8 +461,7 @@ public static void main([]string args){
 }
 
 ```
-
-#### javascript
+### javascript
 ```javascript
 
 const fibonacciFunction = function(n) {
@@ -483,8 +476,7 @@ x = fibonacciFunction(10);
 console.log(x);
 
 ```
-
-#### php
+### php
 ```php
 
 function fibonacciFunction($n) {
