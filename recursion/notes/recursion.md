@@ -325,7 +325,7 @@ $$ n! = n * (n-1) * (n-2) ... * 2 * 1 \longrightarrow n! = n * (n-1) $$
 ### Step Two: Create a condition that allows us to stop.
 
 The immediate problem here is that we haven't created a method to stop. This will essentially cause an infinate recursion, due to the fact that computations don't know when we need to stop.
-### Factorial Sum
+### Factorial Sum Solution
 
 #### python
 ```python
@@ -416,9 +416,11 @@ echo "$x\n";
 
 The Fibonacci numbers from a sequence, commonly know as the Fibonacci sequence in which each number is the sum of the two preceding ones.
 
-### How to find the Fibonacci numbers using Recursion?
+### Fibonacci Numbers Solution?
 
+#### python
 ```python
+
 def fibonacci_function(n):
     if n == 0 or n == 1:
         return n
@@ -428,9 +430,12 @@ def fibonacci_function(n):
 if __name__ == "__main__":
     x = fibonacci_runction(10)
     print(x)
+
 ```
 
+#### go
 ```go
+
 func fibonacciFunction(n int) int {
 	if n == 0 || n == 1 {
 		return n
@@ -442,9 +447,12 @@ func main() {
     x := fibonacciFunction(10)
     fmt.Println(x)
 }
+
 ```
 
+#### java
 ```java
+
 static int fibonacciFunction(int n) {
     if (n == 0 || n == 1) {
         return n;
@@ -457,9 +465,12 @@ public static void main([]string args){
     x = fibonacciFunction(10);
     System.out.println(x);
 }
+
 ```
 
+#### javascript
 ```javascript
+
 const fibonacciFunction = function(n) {
     if (n ==0 || n == 1) {
         return n;
@@ -470,9 +481,12 @@ const fibonacciFunction = function(n) {
 
 x = fibonacciFunction(10);
 console.log(x);
+
 ```
 
+#### php
 ```php
+
 function fibonacciFunction($n) {
     if ($n == 0 || $n == 1) {
         return $n;
@@ -483,5 +497,5 @@ function fibonacciFunction($n) {
 
 $x = fibonacciFunction(10);
 echo "$x\n";
+
 ```
-###
