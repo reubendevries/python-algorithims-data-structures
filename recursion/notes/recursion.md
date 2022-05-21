@@ -327,6 +327,7 @@ $$ n! = n * (n-1) * (n-2) ... * 2 * 1 \longrightarrow n! = n * (n-1) $$
 The immediate problem here is that we haven't created a method to stop. This will essentially cause an infinate recursion, due to the fact that computations don't know when we need to stop.
 ### Factorial Sum
 
+## python
 ```python
 def factorial_number(n):
 '''An example of a recursive factorial function written in python.'''
@@ -338,6 +339,8 @@ def factorial_number(n):
 if __name__ == "__main__":
     factorial_number(5)
 ```
+
+## go
 ```go
 func factorial_number(int n) int {
     if n < 0 {
@@ -349,11 +352,16 @@ func factorial_number(int n) int {
     }
 
 }
+
 func main() {
     factorial_number(5)
 }
+
 ```
+
+## java
 ```java
+
 static int factorialNumber(int n) {
   if (n <= 0) {
     return -1;
@@ -368,8 +376,12 @@ public static void main(String[] args) {
     int x = factorialNumber(5);
     System.out.println(x);
 }
+
 ```
+
+## javascript
 ```javascript
+
 const factorialNumber = function(n) {
     if (n <= 0) {
         return -1;
@@ -382,7 +394,10 @@ const factorialNumber = function(n) {
 
 const x = factorialNumber(5);
 console.log(x);
+
 ```
+
+## php
 ```php
 function factorialNumber($n) {
     if ($n <= 0) {
