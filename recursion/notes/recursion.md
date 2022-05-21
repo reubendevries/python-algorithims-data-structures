@@ -303,22 +303,31 @@ recursionMethodExample($i);
 - It is the product of all positive integers less than or equal to $n$
 - Denoted by $n!$ (introduced by French Mathematician Christian Kramp in 1808)
 - Can contain only positive intergers.
-- i.e. $5! = 120$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;5&nbsp;x&nbsp;4&nbsp;x&nbsp;3&nbsp;x&nbsp;2&nbsp;x&nbsp;1&nbsp;)
-- i.e $8! = 40,320$&nbsp;&nbsp;&nbsp;(&nbsp;8&nbsp;x&nbsp;7&nbsp;x&nbsp;6&nbsp;x&nbsp;5&nbsp;x&nbsp;4&nbsp;x&nbsp;3&nbsp;x&nbsp;2&nbsp;x&nbsp;1&nbsp;)
+- i.e.
+
+$$ 
+5! \text{ or } 5 \times 4 \times 3 \times 2 \times 1  = 120\newline
+8! \text{ or } 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 40,320\newline
+$$
 
 ## How to solve the Challenge
 
-### Step One: Build a flow using Recursion.
-$n! = n * (n-1) * (n-2) ... * 2 * 1 \overrightarrow
+### Step One: Build a functional alogorithm using recursion.
 
+The goal here is to create an alogorithm that can compute the factorial sum using recursion. If we look closely when we compute factorial numbers we are multiplying the first number by the number below it, so if *n* is equal to a number then we can see how the below example on the right can essentially be decalared to be the same on the left:  
+
+
+$$ n! = n * (n-1) * (n-2) ... * 2 * 1 \longrightarrow n! = n * (n-1) $$
+
+### Step Two: Create a condition that allows us to stop.
+
+The immediate problem here is that we haven't created a method to stop. This will essentially cause an infinate recursion, due to the fact that computations don't know when we need to stop.
 ### Factorial Sum
 
 ```python
 def factorial_number(n):
 '''An example of a recursive factorial function written in python.'''
-    if n < 0:
-        return -1
-    elif n < 2:
+    if n < 2:
         return 1
     else:
         return (n * factorial_number(n-1))
