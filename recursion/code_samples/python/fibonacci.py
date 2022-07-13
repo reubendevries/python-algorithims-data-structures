@@ -7,7 +7,7 @@ def fibonacci_function(n):
         return fibonacci_function(n-2) + fibonacci_function(n-1)
     except AssertionError:
         print(f"{0} must be a positive interger.".format(n))
-        exit(1)
+        return exit(1)
 
 if __name__ == "__main__":
     x = fibonacci_function(10)
